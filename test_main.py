@@ -14,21 +14,19 @@ class TestCashCounter(unittest.TestCase):
         main.print = lambda s : output.append(s)
 
         main.main()
-        
+
         self.assertEqual([
             "input: ",
             "input: ",
             "input: ",
             "input: ",
             "input: ",
-            "output: Notas necessarias para compor o valor de 134: \n"
-            "2 notas de 50 \n"
-            "1 nota de 30 \n"
+            "output: Notas necessarias para compor o valor de 134:",
+            "2 notas de 50",
+            "1 notas de 30",
             "4 notas de 1",
             "input: ",
-            "output: Notas necessarias para compor o valor de 10: \n"
-            "2 notas de 50 \n"
-            "1 nota de 30 \n"
-            "4 notas de 1",
+            "output: Notas necessarias para compor o valor de 10:",
+            "10 notas de 1",
             "input: "
         ], output)
