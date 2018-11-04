@@ -1,5 +1,17 @@
 """
 """
+
+
+nota = {
+    "nota" : 0,
+    "qtd":0
+}
+
+to_count = {
+    "notas": [],
+    "value": 0
+}
+
 def main():
     
     typed = 0
@@ -7,7 +19,8 @@ def main():
     while typed != -1:
         typed = int(input("input: "))
         if typed != -1:
-            pass
+            nota["nota"]
+            to_count["notas"].append(nota)
 
     typed = 0
 
