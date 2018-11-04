@@ -1,5 +1,5 @@
 import main
-
+import unittest
 
 def test_main():
     input_values = [50, 30, 1, -1, 134, 10, -1]
@@ -26,5 +26,5 @@ def test_main():
         "input: "
         "output: Notas necessarias para compor o valor de 10:\n"
         +"10 nota de 1\n",
-        "input"
+        "input: "
     ]
