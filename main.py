@@ -10,8 +10,13 @@ def get_cash():
     typed = 0
     while typed != -1:
         typed = int(input("input: "))
-        cash.append(typed)
-       
+        if typed < -1:
+            print("output: invalido")
+        elif typed == 0 or typed > 1000:
+            print("output: invalido")
+        else:
+            cash.append(typed)
+
     cash.sort()
     cash.reverse()
 
@@ -42,8 +47,11 @@ def get_value():
     typed = 0
     while typed != -1:
         typed = int(input("input: "))
-        if typed != -1 and typed > 0:
-            count(typed)
+        if typed != -1:
+            if typed not in range(0,10000):
+                print("output: invalido")
+            else:
+                count(typed)
 
 def main():
     """
