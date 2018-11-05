@@ -25,19 +25,21 @@ def count(value):
     This function will calcule the amount of cash and print 
     """
 
-    print("output: Notas necessarias para compor o valor de {0}:".format(value))
-
-    for i in cash:
-        if value >= i:
-            num_cash.append(int(value/i))
-            value %= i
-        else:
-            num_cash.append(0)
-    
-    for i in range(len(cash) - 1 ):
-        if num_cash[i] != 0:
-            print("{0} notas de {1}".format(num_cash[i], cash[i]))
-       
+    # print("output: Notas necessarias para compor o valor de {0}:".format(value))
+    if value > 0:
+        print("output: Notas necessarias para compor o valor de {0}:".format(value))
+        for i in cash:
+            if value >= i:
+                num_cash.append(int(value/i))
+                value %= i
+            else:
+                num_cash.append(0)
+        
+        for i in range(len(cash) - 1 ):
+            if num_cash[i] != 0:
+                print("{0} notas de {1}".format(num_cash[i], cash[i]))
+    else:
+        print("output : nenhuma nota necessaria")
     num_cash.clear()
 
 def get_value():
