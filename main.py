@@ -16,6 +16,7 @@ def get_cash():
             print("output: invalido")
         else:
             cash.append(typed)
+        
 
     cash.sort()
     cash.reverse()
@@ -25,7 +26,6 @@ def count(value):
     This function will calcule the amount of cash and print 
     """
 
-    # print("output: Notas necessarias para compor o valor de {0}:".format(value))
     if value > 0:
         print("output: Notas necessarias para compor o valor de {0}:".format(value))
         for i in cash:
