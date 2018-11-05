@@ -19,7 +19,7 @@ def count(value):
     """
     This function will calcule the amount of cash and print 
     """
-    
+
     print("output: Notas necessarias para compor o valor de {0}:".format(value))
 
     for i in cash:
